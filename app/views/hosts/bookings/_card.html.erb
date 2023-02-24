@@ -29,7 +29,7 @@
             <% end %>
           </div>
           <div>
-            <%= simple_form_for booking ,data: {action: "submit->insert-in-list#update"}do |f| %>
+            <%= simple_form_for booking ,data: {action: "submit->insert-in-list#update"} do |f| %>
               <%= f.input :status, as: :hidden, input_html: {value: 'rejected'} %>
               <%= button_tag class: "btn btn-outline-danger" do %>
                 <i class="fa-solid fa-xmark"></i> Reject
